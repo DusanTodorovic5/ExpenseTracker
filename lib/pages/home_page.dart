@@ -21,6 +21,7 @@ class _HomePageState extends State<HomePage> {
           Padding(
             padding: const EdgeInsets.all(15.0),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const Text("Today so far: ",
                     style: TextStyle(
