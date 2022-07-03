@@ -1,4 +1,8 @@
+import 'package:expense_tracker/classes/chart_builder.dart';
 import 'package:flutter/material.dart';
+import 'package:syncfusion_flutter_charts/charts.dart';
+
+import '../classes/manager.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key? key}) : super(key: key);
@@ -36,7 +40,10 @@ class _HomePageState extends State<HomePage> {
                 ),
               ],
             ),
-          )
+          ),
+          Expanded(
+            child: ChartBuilder(myDay: Manager().today).build(),
+          ),
         ],
       ),
       floatingActionButton: FloatingActionButton(
